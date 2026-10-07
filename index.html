@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PHEEP | Pool Heating Energy Efficiency Program</title>
+  <meta name="description" content="PHEEP helps qualifying commercial and institutional swimming pools reduce heating energy use through intelligent monitoring, control, reporting, and alerts." />
+  <style>
+    :root{
+      --navy:#123b57;
+      --blue:#1d6f9f;
+      --teal:#2b8f8a;
+      --light:#f4f8fa;
+      --text:#1d2a33;
+      --muted:#5e6d77;
+      --white:#ffffff;
+      --border:#dbe5ea;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--white);line-height:1.55}
+    header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.97);border-bottom:1px solid var(--border)}
+    .nav{max-width:1120px;margin:auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-size:24px;font-weight:700;color:var(--navy);letter-spacing:.3px}
+    .navlinks{display:flex;gap:22px;flex-wrap:wrap}
+    .navlinks a{color:var(--text);text-decoration:none;font-size:15px;font-weight:600}
+    .hero{background:linear-gradient(135deg,var(--navy),var(--blue));color:white}
+    .hero-inner{max-width:1120px;margin:auto;padding:78px 22px 72px;display:grid;grid-template-columns:1.4fr .9fr;gap:48px;align-items:center}
+    .eyebrow{text-transform:uppercase;letter-spacing:1.5px;font-weight:700;font-size:13px;opacity:.85}
+    h1{font-size:48px;line-height:1.08;margin:10px 0 18px}
+    .hero p{font-size:20px;max-width:760px;margin:0 0 28px}
+    .btns{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:13px 20px;border-radius:7px;text-decoration:none;font-weight:700}
+    .btn-primary{background:white;color:var(--navy)}
+    .btn-secondary{border:1px solid rgba(255,255,255,.65);color:white}
+    .hero-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:26px;backdrop-filter:blur(4px)}
+    .hero-card h3{margin-top:0;font-size:22px}
+    .hero-card ul{padding-left:20px;margin-bottom:0}
+    section{padding:66px 22px}
+    .wrap{max-width:1120px;margin:auto}
+    .section-title{text-align:center;max-width:760px;margin:0 auto 38px}
+    .section-title h2{font-size:34px;color:var(--navy);margin:0 0 10px}
+    .section-title p{color:var(--muted);font-size:18px;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .card{border:1px solid var(--border);border-radius:12px;padding:25px;background:white;box-shadow:0 6px 20px rgba(24,58,77,.05)}
+    .card h3{color:var(--navy);margin:0 0 10px;font-size:20px}
+    .light{background:var(--light)}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .step{background:white;border:1px solid var(--border);border-radius:12px;padding:22px}
+    .num{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--teal);color:white;font-weight:700;margin-bottom:12px}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .checklist{padding:0;list-style:none}
+    .checklist li{margin:12px 0;padding-left:28px;position:relative}
+    .checklist li:before{content:'✓';position:absolute;left:0;color:var(--teal);font-weight:700}
+    .cta{background:var(--navy);color:white;border-radius:16px;padding:36px}
+    .cta h2{margin-top:0;font-size:30px}
+    footer{background:#0d2f45;color:white;padding:30px 22px}
+    .foot{max-width:1120px;margin:auto;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+    footer a{color:white}
+    .note{font-size:13px;color:#d5e1e7;max-width:760px}
+    @media(max-width:850px){
+      .hero-inner,.split{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .steps{grid-template-columns:1fr 1fr}
+      h1{font-size:38px}
+      .nav{align-items:flex-start;flex-direction:column}
+    }
+    @media(max-width:560px){
+      .steps{grid-template-columns:1fr}
+      h1{font-size:34px}
+      .hero-inner{padding-top:52px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="brand">PHEEP</div>
+    <nav class="navlinks">
+      <a href="#about">About</a>
+      <a href="#benefits">Potential Benefits</a>
+      <a href="#how">How It Works</a>
+      <a href="#qualify">Who Qualifies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">Pool Heating Energy Efficiency Program</div>
+        <h1>Smarter Pool Heating. Better Visibility. Lower Energy Waste.</h1>
+        <p>PHEEP provides qualifying commercial and institutional swimming pools with intelligent monitoring and control designed to improve pool-heating efficiency, provide operational visibility, and support better energy management.</p>
+        <div class="btns">
+          <a class="btn btn-primary" href="#contact">Request a Site Review</a>
+          <a class="btn btn-secondary" href="#how">See How It Works</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <h3>What PHEEP Provides</h3>
+        <ul>
+          <li>Pool heating monitoring and control</li>
+          <li>Temperature and runtime data</li>
+          <li>Operational reports and alerts</li>
+          <li>Predictive scheduling to reduce unnecessary heating</li>
+          <li>Direct-install support for qualifying sites</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-title">
+        <h2>What Is PHEEP?</h2>
+        <p>PHEEP is focused on improving the efficiency and visibility of swimming-pool heating systems at eligible facilities.</p>
+      </div>
+      <div class="grid">
+        <div class="card"><h3>Monitor</h3><p>Track pool temperature, outdoor conditions, heater outlet temperature, runtime, and other operating information.</p></div>
+        <div class="card"><h3>Control</h3><p>Use intelligent scheduling and predictive start strategies to reduce avoidable heater operation while maintaining target pool conditions.</p></div>
+        <div class="card"><h3>Report</h3><p>Receive useful operating information, alerts, and reports that help facility teams understand how the pool-heating system is performing.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits" class="light">
+    <div class="wrap">
+      <div class="section-title">
+        <h2>Potential Benefits</h2>
+        <p>Actual results vary by pool, operating schedule, equipment, weather, utility rates, and existing controls.</p>
+      </div>
+      <div class="grid">
+        <div class="card"><h3>Reduced Heating Waste</h3><p>Better control can help avoid heating the pool earlier or longer than necessary.</p></div>
+        <div class="card"><h3>Improved Operational Insight</h3><p>Continuous data helps identify abnormal temperatures, excessive runtime, and other operating conditions that deserve attention.</p></div>
+        <div class="card"><h3>Remote Visibility</h3><p>Facility teams can gain a clearer picture of pool-heating operation without relying only on manual checks.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="section-title">
+        <h2>How It Works</h2>
+        <p>The process is designed to be straightforward for the facility.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><strong>Site Review</strong><p>We review the pool, heater, operating schedule, and basic facility information.</p></div>
+        <div class="step"><div class="num">2</div><strong>Qualification</strong><p>We determine whether the site appears to meet current program requirements.</p></div>
+        <div class="step"><div class="num">3</div><strong>Installation</strong><p>The Pool Control System is installed and connected to the pool-heating equipment.</p></div>
+        <div class="step"><div class="num">4</div><strong>Monitoring</strong><p>Operating data, reports, and alerts are used to support ongoing energy-management decisions.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="qualify" class="light">
+    <div class="wrap split">
+      <div>
+        <h2 style="color:var(--navy);font-size:34px;margin-top:0">Who May Qualify?</h2>
+        <p>PHEEP is intended for qualifying commercial and institutional pools within the applicable service territory and program requirements.</p>
+        <ul class="checklist">
+          <li>Hotels and hospitality properties</li>
+          <li>Multifamily communities</li>
+          <li>Country clubs and HOAs</li>
+          <li>Private schools and educational facilities</li>
+          <li>Swim schools and nonprofit facilities</li>
+          <li>Other qualifying commercial pools</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>What We Usually Need</h3>
+        <p>To begin a site review, it helps to have:</p>
+        <ul>
+          <li>Pool address</li>
+          <li>Approximate pool dimensions or square footage</li>
+          <li>Pool operating hours and target temperature</li>
+          <li>Heater make, model, and input rating</li>
+          <li>A recent gas bill, when readily available</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="cta">
+        <h2>Request a PHEEP Site Review</h2>
+        <p>Contact CEGY to discuss your pool, confirm the information needed, and determine the next step.</p>
+        <p><strong>Email:</strong> <a style="color:white" href="mailto:steve@cegy.us">steve@cegy.us</a><br>
+        <strong>CEGY:</strong> <a style="color:white" href="https://cegy.us">cegy.us</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="foot">
+    <div><strong>PHEEP</strong><br>Pool Heating Energy Efficiency Program</div>
+    <div class="note">Program availability, eligibility, incentives, installation terms, and estimated savings are subject to current program requirements and site-specific review. References to potential benefits are estimates only and are not guarantees of energy or cost savings.</div>
+  </div>
+</footer>
+</body>
+</html>
