@@ -122,13 +122,15 @@
       .navlinks{gap:12px}
       .foot{grid-template-columns:1fr}
     }
-  </style>
-</head>
+  .cegy-brand{display:block;width:112px;height:62px;object-fit:contain}.brandtext{min-width:0}.brandtext span{max-width:250px}.hero{background:linear-gradient(90deg,rgba(5,35,56,.88),rgba(5,35,56,.66)),url('assets/pools.jpg') center/cover no-repeat}.hero:after{display:none}.pool-figure{margin:0}.pool-figure img{display:block;width:100%;height:360px;object-fit:cover;border-radius:18px}.pool-figure figcaption{font-size:12px;color:var(--muted);margin-top:8px}.faq{max-width:850px;margin:auto}.faq details{border-bottom:1px solid var(--border);padding:20px 0}.faq summary{cursor:pointer;font-size:20px;font-weight:700;color:var(--navy)}.faq p{margin-bottom:0}section[id]{scroll-margin-top:110px}a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--aqua);outline-offset:4px}.skip-link{position:absolute;left:12px;top:-80px;background:white;color:var(--navy);padding:12px;z-index:100}.skip-link:focus{top:12px}@media(max-width:900px){section[id]{scroll-margin-top:175px}.nav{gap:14px}}@media(max-width:600px){section{padding:48px 20px}.nav{padding:10px 20px}.navlinks{gap:10px 16px}.navlinks a{font-size:13px}.cegy-brand{width:90px}.brandtext span{font-size:10px}.pool-figure img{height:270px}section[id]{scroll-margin-top:195px}.cta{padding:26px}.hero-inner{gap:28px}.hero-card{padding:22px}}
+</style>
+<link rel="canonical" href="https://pheep.us/"><meta property="og:title" content="PHEEP | Pool Heating Energy Efficiency Program"><meta property="og:description" content="Pool heating controls, monitoring, reports and alerts. Funded by SoCalGas and administered by CEGY."><meta property="og:image" content="https://pheep.us/assets/pools.jpg"><meta property="og:type" content="website"></head>
 <body>
+<a class="skip-link" href="#top">Skip to content</a>
 <header>
   <div class="nav">
     <a class="brand" href="#top">
-      <div class="mark">PHEEP</div>
+      <img class="cegy-brand" src="assets/cegy-logo.jpg" alt="CEGY — Moving Forward" width="1693" height="929">
       <div class="brandtext"><strong>PHEEP</strong><span>Pool Heating Energy Efficiency Program</span></div>
     </a>
     <nav class="navlinks">
@@ -160,7 +162,7 @@
           <li>Track heater runtime and outdoor conditions</li>
           <li>Use predictive start to reduce unnecessary heating</li>
           <li>Shut heating off at scheduled closing time</li>
-          <li>Provide reports and operating alerts</li>
+          <li>Provide reports and operating alerts</li><li>Help identify heater short cycling and offline conditions</li>
         </ul>
       </aside>
     </div>
@@ -197,12 +199,13 @@
       <div class="benefit-grid">
         <div class="benefit"><strong>Lower heating energy use</strong><p>Reduce heater runtime caused by early starts, excessive temperature drift, and heating beyond scheduled operating hours.</p></div>
         <div class="benefit"><strong>Better operational visibility</strong><p>Continuous data gives managers a clearer view of pool temperature and heater behavior than occasional manual readings alone.</p></div>
-        <div class="benefit"><strong>Faster problem identification</strong><p>Alerts can help surface unusual temperature or runtime conditions so staff can investigate before a problem becomes larger.</p></div>
+        <div class="benefit"><strong>Faster problem identification</strong><p>Ongoing monitoring helps service companies and onsite providers investigate heater short cycling, heaters offline, and abnormal temperature or runtime conditions.</p></div>
         <div class="benefit"><strong>Useful documentation</strong><p>Reports provide an operating record that can support facility management, maintenance review, and energy-efficiency analysis.</p></div>
       </div>
     </div>
   </section>
 
+  <section id="service" class="service-section"><div class="wrap split"><div><div class="eyebrow" style="color:var(--blue)">For pool operators and service providers</div><h2>A clearer view between service visits</h2><p>The connected platform gives pool service companies and onsite providers visibility into pool temperatures, heater operation, and operating trends.</p><ul class="checklist"><li>Investigate frequent heater starts and short cycling</li><li>Identify heaters offline or missing operating data</li><li>Review temperature and runtime history</li><li>Use reports to support maintenance decisions</li></ul></div><figure class="pool-figure"><img src="assets/pools.jpg" alt="Outdoor heated swimming pool at sunset" width="1200" height="800" loading="lazy"><figcaption>Illustrative pool photograph.</figcaption></figure></div></section>
   <section id="how">
     <div class="wrap">
       <div class="section-title">
@@ -222,7 +225,7 @@
     <div class="wrap split">
       <div>
         <h2>Who may qualify?</h2>
-        <p>PHEEP is intended for qualifying commercial and institutional pools within the applicable SoCalGas service territory and current program requirements.</p>
+        <p>PHEEP is intended for qualifying commercial and institutional pools with gas-fired heaters and an eligible SoCalGas account. Final eligibility depends on the site review and current program requirements.</p>
         <ul class="checklist">
           <li>Hotels and hospitality properties</li>
           <li>Multifamily communities</li>
@@ -238,7 +241,7 @@
           <li>Pool address</li>
           <li>Approximate pool dimensions or surface area</li>
           <li>Pool operating hours and target temperature</li>
-          <li>Heater manufacturer, model, and BTU input</li>
+          <li>Gas-fired heater manufacturer, model, and BTU/h input</li>
           <li>A recent gas bill, if readily available</li>
         </ul>
         <p class="small">A virtual review can often begin with photos and basic equipment information.</p>
@@ -260,12 +263,13 @@
           <div><label for="sqft">Pool surface area (sq. ft.)</label><input id="sqft" type="number" min="1" value="800" oninput="calcSavings()"></div>
           <div><label for="monthly">Reference savings / 800 sq. ft.</label><input id="monthly" type="number" min="0" value="310" oninput="calcSavings()"></div>
         </div>
-        <div class="result">Estimated potential savings: <strong id="result">$310/month • $3,720/year</strong></div>
+        <div class="result" aria-live="polite">Estimated potential savings: <strong id="result">$310/month • $3,720/year</strong></div>
         <div class="small" style="margin-top:9px">Planning estimate only. Actual energy and cost savings will vary by site.</div>
       </div>
     </div>
   </section>
 
+  <section id="questions" class="light"><div class="wrap"><div class="section-title"><h2>Common questions</h2></div><div class="faq"><details><summary>What does the program pay for?</summary><p>Qualifying direct-install sites receive equipment and installation without an upfront charge. CEGY confirms the funded monitoring period and ongoing subscription options before participation.</p></details><details><summary>Can we start with a virtual review?</summary><p>Yes. Send the pool address, approximate dimensions, operating hours, target temperature, and photos of the heater and equipment area. A recent gas bill helps refine the review.</p></details><details><summary>Are the savings guaranteed?</summary><p>No. The calculator gives a preliminary planning estimate. Actual results depend on the pool, heating equipment, operating practices, weather, and utility rates.</p></details><details><summary>Can our pool service company participate?</summary><p>Service companies can refer sites and coordinate with CEGY. The monitoring platform helps service teams review heater operation and investigate alerts.</p></details></div></div></section>
   <section id="contact">
     <div class="wrap">
       <div class="cta">
@@ -274,7 +278,7 @@
           <p>Send us the property name and pool address. We can then identify the information needed to determine the next step.</p>
         </div>
         <div class="contactbox">
-          <p><strong>CEGY / PHEEP</strong></p>
+          <p><strong>Steve Nold · CEGY / PHEEP</strong></p><p><a class="btn btn-primary" style="color:var(--navy);margin:8px 0" href="mailto:steve@cegy.us?subject=PHEEP%20Site%20Review&body=Property%20name%3A%0APool%20address%3A%0AContact%20name%3A%0APhone%3A%0ANumber%20of%20pools%3A%0APool%20dimensions%3A">Email a Site Review Request</a></p>
           <p><a href="mailto:steve@cegy.us?subject=PHEEP%20Site%20Review%20Request">steve@cegy.us</a></p>
           <p><a href="https://cegy.us">cegy.us</a></p>
           <p><a href="https://www.socalgas.com">socalgas.com</a></p>
