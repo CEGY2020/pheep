@@ -133,6 +133,14 @@ dialog.external-notice::backdrop{background:rgba(0,0,0,.55)}
 .external-notice .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
 .external-notice button{padding:11px 16px;border-radius:8px;font:inherit;cursor:pointer;border:1px solid var(--navy)}
 .external-notice .continue{background:var(--navy);color:#fff}
+
+.hero{background:linear-gradient(90deg,rgba(5,32,50,.86),rgba(5,32,50,.34)),url('assets/pools.jpg') center/cover no-repeat !important;color:#fff !important;min-height:520px}
+.hero .hero-copy,.hero .eyebrow{color:#fff !important}.hero h1{color:#fff;text-shadow:0 2px 8px rgba(0,0,0,.22)}
+.hero .btns .btn{padding:13px 19px;border-radius:8px;background:#fff;color:#0f3650}.hero .btns .btn:last-child{background:#0f3650 !important;color:#fff !important;border:2px solid #fff}.hero-inner{min-height:520px}
+.photo-feature{margin:0;position:relative;overflow:hidden;border-radius:18px;box-shadow:var(--shadow);height:330px}.photo-feature img{width:100%;height:100%;object-fit:cover;display:block}.photo-feature figcaption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(5,32,50,.92));color:#fff;padding:45px 20px 18px;font-weight:700}
+.photo-gallery{display:grid;grid-template-columns:1fr 1fr;gap:20px}.photo-gallery figure{margin:0;border-radius:14px;overflow:hidden;background:#fff;border:1px solid var(--border)}.photo-gallery img{display:block;width:100%;height:270px;object-fit:cover}.photo-gallery figcaption{padding:14px 18px;color:var(--navy);font-weight:700}
+.video-panel{border:1px solid var(--border);border-radius:18px;padding:26px;background:#f0f6fa;display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}.video-placeholder{border-radius:14px;min-height:220px;background:linear-gradient(135deg,#183f5a,#418aa8);display:grid;place-items:center;color:white;text-align:center;padding:24px}.video-placeholder span{font-size:44px;display:block}
+@media(max-width:750px){.photo-gallery,.video-panel{grid-template-columns:1fr}.photo-feature{height:270px}.photo-gallery img{height:220px}}
 </style>
 <link rel="canonical" href="https://pheep.us/"><meta property="og:title" content="PHEEP | Pool Heating Energy Efficiency Program"><meta property="og:description" content="Pool heating controls, monitoring, reports and alerts. Funded by SoCalGas and administered by CEGY."><meta property="og:type" content="website"></head>
 <body>
@@ -148,6 +156,7 @@ dialog.external-notice::backdrop{background:rgba(0,0,0,.55)}
       <a href="#benefits">Potential Benefits</a>
       <a href="#how">How It Works</a>
       <a href="#qualify">Who Qualifies</a>
+      <a href="#video">Video</a>
       <a href="#pool-calculator">Pool Savings Calculator</a>
       <a class="nav-cta" href="#contact">Request Review</a>
     </nav>
@@ -217,7 +226,7 @@ dialog.external-notice::backdrop{background:rgba(0,0,0,.55)}
     </div>
   </section>
 
-  <section id="service" class="service-section"><div class="wrap split"><div><div class="eyebrow" style="color:var(--blue)">For pool operators and service providers</div><h2>A clearer view between service visits</h2><p>The connected platform gives pool service companies and onsite providers visibility into pool temperatures, heater operation, and operating trends.</p><ul class="checklist"><li>Investigate frequent heater starts and short cycling</li><li>Identify heaters offline or missing operating data</li><li>Review temperature and runtime history</li><li>Use reports to support maintenance decisions</li></ul></div><div class="program-note">The PHEEP site review considers pool equipment, operating schedules, target water temperature, and current heating practices.</div></div></section>
+  <section id="service" class="service-section"><div class="wrap split"><div><div class="eyebrow" style="color:var(--blue)">For pool operators and service providers</div><h2>A clearer view between service visits</h2><p>The connected platform gives pool service companies and onsite providers visibility into pool temperatures, heater operation, and operating trends.</p><ul class="checklist"><li>Investigate frequent heater starts and short cycling</li><li>Identify heaters offline or missing operating data</li><li>Review temperature and runtime history</li><li>Use reports to support maintenance decisions</li></ul></div><figure class="photo-feature"><img src="assets/pools.jpg" alt="Outdoor swimming pool" loading="lazy"><figcaption>Pool operation and heating performance</figcaption></figure></div></section>
   <section id="how">
     <div class="wrap">
       <div class="section-title">
@@ -234,6 +243,10 @@ dialog.external-notice::backdrop{background:rgba(0,0,0,.55)}
   </section>
 
   <section id="qualify" class="light">
+    <div class="wrap photo-gallery" style="margin-bottom:34px">
+      <figure><img src="https://cegy2020.github.io/cegy/assets/hotels.jpg" alt="Hotel property with guest rooms" loading="lazy"><figcaption>Hotels and hospitality</figcaption></figure>
+      <figure><img src="https://cegy2020.github.io/cegy/assets/multifamily.jpg" alt="Multifamily residential community" loading="lazy"><figcaption>Multifamily and HOAs</figcaption></figure>
+    </div>
     <div class="wrap split">
       <div>
         <h2>Who may qualify?</h2>
@@ -278,7 +291,11 @@ dialog.external-notice::backdrop{background:rgba(0,0,0,.55)}
     </div>
   </section>
 
-  <section id="questions" class="light"><div class="wrap"><div class="section-title"><h2>Common questions</h2></div><div class="faq"><details><summary>What does the program pay for?</summary><p>Eligible sites may receive pool control equipment and installation at no cost under the approved program terms. The approved Program Participation Agreement governs support, warranty, maintenance, and technical assistance. Confirm current participation conditions with CEGY.</p></details><details><summary>Can we start with a virtual review?</summary><p>Yes. Send the pool address, approximate dimensions, operating hours, target temperature, and photos of the heater and equipment area. A recent gas bill helps refine the review.</p></details><details><summary>Are the savings guaranteed?</summary><p>No. The calculator gives a preliminary planning estimate. Actual results depend on the pool, heating equipment, operating practices, weather, and utility rates.</p></details><details><summary>Can our pool service company participate?</summary><p>Service companies can refer sites and coordinate with CEGY. The monitoring platform helps service teams review heater operation and investigate alerts.</p></details></div></div></section>
+  <section id="video"><div class="wrap">
+<div class="section-title"><h2>See How PHEEP Works</h2><p>A short program video can explain pool controls, monitoring, and scheduling.</p></div>
+<div class="video-panel"><div class="video-placeholder"><div><span aria-hidden="true">▶</span><strong>Program Video</strong><p>Video pending SoCalGas review and approval</p></div></div><div><h3 style="color:var(--navy);font-size:24px">A visual introduction</h3><p>An approved video can show how PHEEP reviews a site, evaluates pool schedules, installs controls, and monitors equipment operation.</p><p class="small">The video will be added once approved; this is not a playable video.</p></div></div>
+</div></section>
+<section id="questions" class="light"><div class="wrap"><div class="section-title"><h2>Common questions</h2></div><div class="faq"><details><summary>What does the program pay for?</summary><p>Eligible sites may receive pool control equipment and installation at no cost under the approved program terms. The approved Program Participation Agreement governs support, warranty, maintenance, and technical assistance. Confirm current participation conditions with CEGY.</p></details><details><summary>Can we start with a virtual review?</summary><p>Yes. Send the pool address, approximate dimensions, operating hours, target temperature, and photos of the heater and equipment area. A recent gas bill helps refine the review.</p></details><details><summary>Are the savings guaranteed?</summary><p>No. The calculator gives a preliminary planning estimate. Actual results depend on the pool, heating equipment, operating practices, weather, and utility rates.</p></details><details><summary>Can our pool service company participate?</summary><p>Service companies can refer sites and coordinate with CEGY. The monitoring platform helps service teams review heater operation and investigate alerts.</p></details></div></div></section>
   <section id="contact">
     <div class="wrap">
       <div class="cta">
