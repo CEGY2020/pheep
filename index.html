@@ -141,6 +141,32 @@ dialog.external-notice::backdrop{background:rgba(0,0,0,.55)}
 .photo-gallery{display:grid;grid-template-columns:1fr 1fr;gap:20px}.photo-gallery figure{margin:0;border-radius:14px;overflow:hidden;background:#fff;border:1px solid var(--border)}.photo-gallery img{display:block;width:100%;height:270px;object-fit:cover}.photo-gallery figcaption{padding:14px 18px;color:var(--navy);font-weight:700}
 .video-panel{border:1px solid var(--border);border-radius:18px;padding:26px;background:#f0f6fa;display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}.video-placeholder{border-radius:14px;min-height:220px;background:linear-gradient(135deg,#183f5a,#418aa8);display:grid;place-items:center;color:white;text-align:center;padding:24px}.video-placeholder span{font-size:44px;display:block}
 @media(max-width:750px){.photo-gallery,.video-panel{grid-template-columns:1fr}.photo-feature{height:270px}.photo-gallery img{height:220px}}
+
+/* Updated photography and video presentation */
+.hero{background:linear-gradient(90deg,rgba(11,57,95,.96) 0%,rgba(19,91,149,.75) 38%,rgba(7,45,78,.12) 100%),url('assets/pools.jpg') center/cover no-repeat !important}
+.hero-inner{min-height:560px;display:grid;align-items:center}
+.hero-inner>div{max-width:750px}
+.hero h1{font-size:clamp(36px,5vw,56px);line-height:1.1}
+.hero-copy{font-size:19px;line-height:1.55}
+.hero .btns{gap:12px}
+.hero .btns .btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;padding:14px 18px;background:#fff;color:#123b5a;border-radius:8px;box-shadow:0 5px 14px rgba(0,0,0,.12)}
+.hero .btns .btn-secondary{background:transparent;color:#fff;border:2px solid #fff}
+.hero .btns .btn:last-child{border:2px solid #fff}
+.photo-feature,.photo-gallery figure{box-shadow:0 10px 30px rgba(15,54,80,.10)}
+.photo-feature img,.photo-gallery img{object-position:center}
+.photo-gallery figcaption{font-size:17px}
+.video-panel{background:#f2f7fa}
+.video-player{aspect-ratio:16/9;overflow:hidden;border-radius:12px;background:#143c5d}
+.video-player video{display:block;width:100%;height:100%;object-fit:cover}
+.video-player video[hidden]{display:none}
+.video-pending{height:100%;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:25px;text-align:center;color:#fff;background:linear-gradient(120deg,#153c5b,#336f92)}
+.video-pending strong{font-size:23px}
+.video-pending p{max-width:300px}
+.video-panel h3{font-size:24px;color:var(--navy);margin:0 0 10px}
+.video-panel p{line-height:1.65}
+.navlinks a{min-height:40px;display:inline-flex;align-items:center}
+@media(max-width:800px){.video-panel{grid-template-columns:1fr}.navlinks{gap:8px 12px}.hero-inner{min-height:440px}}
+
 </style>
 <link rel="canonical" href="https://pheep.us/"><meta property="og:title" content="PHEEP | Pool Heating Energy Efficiency Program"><meta property="og:description" content="Pool heating controls, monitoring, reports and alerts. Funded by SoCalGas and administered by CEGY."><meta property="og:type" content="website"></head>
 <body>
@@ -291,10 +317,31 @@ dialog.external-notice::backdrop{background:rgba(0,0,0,.55)}
     </div>
   </section>
 
-  <section id="video"><div class="wrap">
-<div class="section-title"><h2>See How PHEEP Works</h2><p>A short program video can explain pool controls, monitoring, and scheduling.</p></div>
-<div class="video-panel"><div class="video-placeholder"><div><span aria-hidden="true">▶</span><strong>Program Video</strong><p>Video pending SoCalGas review and approval</p></div></div><div><h3 style="color:var(--navy);font-size:24px">A visual introduction</h3><p>An approved video can show how PHEEP reviews a site, evaluates pool schedules, installs controls, and monitors equipment operation.</p><p class="small">The video will be added once approved; this is not a playable video.</p></div></div>
-</div></section>
+  <section id="video">
+  <div class="wrap">
+    <div class="section-title">
+      <h2>See How the Pool Heating Program Works</h2>
+      <p>Learn how a site review, heating schedule, and monitoring work together to help reduce unnecessary heater operation.</p>
+    </div>
+    <div class="video-panel">
+      <div class="video-player">
+        <video id="pheepVideo" controls preload="none" playsinline poster="assets/pools.jpg" aria-label="PHEEP pool heating program overview video" hidden>
+          <source src="assets/pheep-program-overview.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <div id="videoPending" class="video-pending" role="status">
+          <strong>Program Video</strong>
+          <p>An approved program overview video will be displayed here when available.</p>
+        </div>
+      </div>
+      <div>
+        <h3>What the Video Will Cover</h3>
+        <p>A PHEEP program overview will show a typical commercial pool, explain how opening and closing times affect heating demand, and describe equipment monitoring and reporting.</p>
+        <p>Program-specific claims and imagery must follow the applicable SoCalGas website and photography requirements.</p>
+      </div>
+    </div>
+  </div>
+</section>
 <section id="questions" class="light"><div class="wrap"><div class="section-title"><h2>Common questions</h2></div><div class="faq"><details><summary>What does the program pay for?</summary><p>Eligible sites may receive pool control equipment and installation at no cost under the approved program terms. The approved Program Participation Agreement governs support, warranty, maintenance, and technical assistance. Confirm current participation conditions with CEGY.</p></details><details><summary>Can we start with a virtual review?</summary><p>Yes. Send the pool address, approximate dimensions, operating hours, target temperature, and photos of the heater and equipment area. A recent gas bill helps refine the review.</p></details><details><summary>Are the savings guaranteed?</summary><p>No. The calculator gives a preliminary planning estimate. Actual results depend on the pool, heating equipment, operating practices, weather, and utility rates.</p></details><details><summary>Can our pool service company participate?</summary><p>Service companies can refer sites and coordinate with CEGY. The monitoring platform helps service teams review heater operation and investigate alerts.</p></details></div></div></section>
   <section id="contact">
     <div class="wrap">
@@ -360,6 +407,20 @@ confirm.addEventListener('click',()=>{
   const link=destination;destination=null;dialog.close();
   if(link)window.open(link,'_blank','noopener,noreferrer');
 });
+})();
+</script>
+<script>
+/* Show the video player only after an actual local MP4 has been published. */
+(async function(){
+ const video=document.getElementById('pheepVideo');
+ const pending=document.getElementById('videoPending');
+ if(!video||!pending)return;
+ try{
+   const response=await fetch('assets/pheep-program-overview.mp4',{method:'HEAD',cache:'no-store'});
+   if(response.ok && (response.headers.get('content-type')||'').includes('video')){
+     video.hidden=false;pending.hidden=true;
+   }
+ }catch(e){/* Remain in non-playable informational state. */}
 })();
 </script>
 </body>
