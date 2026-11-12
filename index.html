@@ -126,6 +126,13 @@
 .hero{background:linear-gradient(90deg,rgba(255,255,255,.78),rgba(255,255,255,.12)),url('assets/pools.jpg') center/cover no-repeat;color:var(--navy)}.hero-inner{grid-template-columns:1fr;min-height:70vh}.hero-inner>div{max-width:760px}.hero .hero-copy,.hero .eyebrow,.hero .kicker{color:var(--navy)}.hero .btn{background:transparent;border:0;box-shadow:none;color:var(--navy);padding:12px 0}.hero .btn:hover{text-decoration:underline}.hero .btns{gap:30px}.program-points{margin-bottom:60px;color:var(--navy)}.program-points h2{font-size:32px}.program-points ul{padding-left:24px;line-height:1.7;max-width:900px}.program-points li{margin:12px 0}
 .section-photo{margin:0 0 36px;overflow:hidden;border-radius:18px}.section-photo img{display:block;width:100%;height:320px;object-fit:cover;animation:gentleZoom 18s ease-in-out infinite alternate;transform-origin:center}.section-photo figcaption{position:relative;background:#fff;padding:8px 12px;font-size:12px;color:var(--muted)}.photo-pair{display:grid;grid-template-columns:1fr 1fr;gap:28px}.pool-figure{overflow:hidden;border-radius:18px}.pool-figure img{animation:gentleZoom 18s ease-in-out infinite alternate}@keyframes gentleZoom{from{transform:scale(1)}to{transform:scale(1.04)}}@media(max-width:600px){.photo-pair{grid-template-columns:1fr}.section-photo img{height:250px}}@media(prefers-reduced-motion:reduce){.section-photo img,.pool-figure img{animation:none}}
 .photo-pair{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px}.photo-pair .section-photo{flex:0 0 calc(50% - 14px);scroll-snap-align:start}@media(max-width:600px){.photo-pair .section-photo{flex-basis:85%}}
+.brand-program{font-weight:800;font-size:26px;color:var(--navy);letter-spacing:.4px}
+.hero{background:linear-gradient(90deg,rgba(220,238,250,.94),rgba(14,89,140,.42)),url('assets/pools.jpg') center/cover no-repeat}
+dialog.external-notice{border:1px solid var(--border);border-radius:14px;max-width:580px;width:calc(100% - 32px);padding:26px;box-shadow:0 18px 55px rgba(0,0,0,.22)}
+dialog.external-notice::backdrop{background:rgba(0,0,0,.55)}
+.external-notice .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.external-notice button{padding:11px 16px;border-radius:8px;font:inherit;cursor:pointer;border:1px solid var(--navy)}
+.external-notice .continue{background:var(--navy);color:#fff}
 </style>
 <link rel="canonical" href="https://pheep.us/"><meta property="og:title" content="PHEEP | Pool Heating Energy Efficiency Program"><meta property="og:description" content="Pool heating controls, monitoring, reports and alerts. Funded by SoCalGas and administered by CEGY."><meta property="og:image" content="https://pheep.us/assets/pools.jpg"><meta property="og:type" content="website"></head>
 <body>
@@ -133,15 +140,15 @@
 <header>
   <div class="nav">
     <a class="brand" href="#top">
-      <img class="cegy-brand" src="assets/cegy-logo.jpg" alt="CEGY — Moving Forward" width="1693" height="929">
-      <div class="brandtext"><strong>PHEEP</strong><span>Pool Heating Energy Efficiency Program</span></div>
+      <span class="brand-program" aria-label="PHEEP Program">PHEEP</span>
+      <div class="brandtext"><strong>Pool Heating Energy Efficiency Program</strong><span>Funded by California utility customers</span></div>
     </a>
     <nav class="navlinks">
       <a href="#about">Program</a>
       <a href="#benefits">Potential Benefits</a>
       <a href="#how">How It Works</a>
       <a href="#qualify">Who Qualifies</a>
-      <a href="https://pheep-pool-calculator.onrender.com/" target="_blank" rel="noopener noreferrer">Pool Savings Calculator</a>
+      <a href="#pool-calculator">Pool Savings Calculator</a>
       <a class="nav-cta" href="#contact">Request Review</a>
     </nav>
   </div>
@@ -157,7 +164,7 @@
         <div class="btns">
           <a class="btn btn-primary" href="#contact">Request a No-Cost Site Review</a>
           <a class="btn btn-secondary" href="#how">How PHEEP Works</a>
-          <a class="btn btn-primary" href="https://pheep-pool-calculator.onrender.com/" target="_blank" rel="noopener noreferrer" style="background:var(--navy);color:white;border-radius:8px;padding:12px 18px">Pool Savings Calculator</a>
+          <a class="btn btn-primary" href="#pool-calculator" style="background:var(--navy);color:white;border-radius:8px;padding:12px 18px">Pool Savings Calculator</a>
         </div>
       </div>
       
@@ -168,7 +175,7 @@
     <div class="stats">
       <div class="stat"><strong>10-minute</strong><span>operating data intervals</span></div>
       <div class="stat"><strong>24/7</strong><span>remote system visibility</span></div>
-      <div class="stat"><strong>No upfront cost</strong><span>for qualifying direct-install sites</span></div>
+      <div class="stat"><strong>No cost</strong><span>for qualifying direct-install sites</span></div>
     </div>
   </div>
 
@@ -178,10 +185,10 @@
 <li>Calculate the Solar Gain to Reduce Heater Run Time</li>
 <li>Calculate when the Heater must fire to Heat the Pool by Opening Time</li>
 <li>Provide the Pool Platform for the Pool Service Company to use and better manage the Pool System</li>
-<li>The NOVARA Pool asset can be installed by the Pool Service Company</li>
-<li>CEGY will provide Training to install the NOVARA Pool asset</li>
+<li>Participating installation personnel may install the approved pool control equipment in accordance with program requirements</li>
+<li>Installation guidance and technical assistance are provided within approved program scope</li>
 <li>CEGY will provide assistance to use the Pool Platform</li>
-<li>All necessary Reports and Alarms will be provided by text and/or email</li>
+<li>Operating reports and notifications may support ongoing system monitoring</li>
 </ul></div>
       <div class="section-title">
         <h2>Energy management built specifically for heated pools</h2>
@@ -258,32 +265,32 @@
     <div class="wrap" style="text-align:center">
       <div class="section-title">
         <h2>Pool Savings Calculator</h2>
-        <p>Enter pool, heater, and operating information to develop a preliminary energy and cost savings estimate using historical weather.</p>
+        <p>Use pool, heater, and operating information to develop a preliminary estimate using historical weather. The separate calculator is a CEGY planning tool and is not an approved program savings claim.</p>
       </div>
-      <a class="btn" href="https://pheep-pool-calculator.onrender.com/" target="_blank" rel="noopener noreferrer" style="background:var(--navy);color:white;padding:15px 24px">Open Pool Savings Calculator</a>
+      <a class="btn" href="calculator-link.html" style="background:var(--navy);color:white;padding:15px 24px">Open Pool Savings Calculator</a>
       <div style="margin-top:24px">
-        <a href="https://pheep-pool-calculator.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Pool Savings Calculator with QR code">
-          <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&amp;data=https%3A%2F%2Fpheep-pool-calculator.onrender.com%2F" width="180" height="180" loading="lazy" alt="QR code for PHEEP Pool Savings Calculator" style="max-width:100%;background:white;border:8px solid white">
+        <a href="calculator-link.html" aria-label="Open calculator access notice">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&amp;data=https%3A%2F%2Fpheep.us%2Fcalculator-link.html" width="180" height="180" loading="lazy" alt="QR code for PHEEP Pool Savings Calculator" style="max-width:100%;background:white;border:8px solid white">
         </a>
-        <p class="small">Scan to open the calculator on your phone.</p>
+        <p class="small">Scan to view the calculator access notice on your phone.</p>
       </div>
-      <p class="small">Preliminary estimates are not guaranteed. CEGY internal reports require staff sign-in.</p>
+      <p class="small">Preliminary estimates are not guaranteed. This separate calculator and its reports require SoCalGas review before use as approved PHEEP customer-facing materials. CEGY internal reports require staff sign-in.</p>
     </div>
   </section>
 
-  <section id="questions" class="light"><div class="wrap"><div class="section-title"><h2>Common questions</h2></div><div class="faq"><details><summary>What does the program pay for?</summary><p>Qualifying direct-install sites receive equipment and installation without an upfront charge. CEGY confirms the funded monitoring period and ongoing subscription options before participation.</p></details><details><summary>Can we start with a virtual review?</summary><p>Yes. Send the pool address, approximate dimensions, operating hours, target temperature, and photos of the heater and equipment area. A recent gas bill helps refine the review.</p></details><details><summary>Are the savings guaranteed?</summary><p>No. The calculator gives a preliminary planning estimate. Actual results depend on the pool, heating equipment, operating practices, weather, and utility rates.</p></details><details><summary>Can our pool service company participate?</summary><p>Service companies can refer sites and coordinate with CEGY. The monitoring platform helps service teams review heater operation and investigate alerts.</p></details></div></div></section>
+  <section id="questions" class="light"><div class="wrap"><div class="section-title"><h2>Common questions</h2></div><div class="faq"><details><summary>What does the program pay for?</summary><p>Eligible sites may receive pool control equipment and installation at no cost under the approved program terms. The approved Program Participation Agreement governs support, warranty, maintenance, and technical assistance. Confirm current participation conditions with CEGY.</p></details><details><summary>Can we start with a virtual review?</summary><p>Yes. Send the pool address, approximate dimensions, operating hours, target temperature, and photos of the heater and equipment area. A recent gas bill helps refine the review.</p></details><details><summary>Are the savings guaranteed?</summary><p>No. The calculator gives a preliminary planning estimate. Actual results depend on the pool, heating equipment, operating practices, weather, and utility rates.</p></details><details><summary>Can our pool service company participate?</summary><p>Service companies can refer sites and coordinate with CEGY. The monitoring platform helps service teams review heater operation and investigate alerts.</p></details></div></div></section>
   <section id="contact">
     <div class="wrap">
       <div class="cta">
         <div>
           <h2>Request a PHEEP site review</h2>
-          <p>Send us the property name and pool address. We can then identify the information needed to determine the next step.</p>
+          <p>Contact CEGY about a potential site review. Do not include gas account numbers or sensitive personal information in an initial email.</p>
         </div>
         <div class="contactbox">
-          <p><strong>Steve Nold · CEGY / PHEEP</strong></p><p><a class="btn btn-primary" style="color:var(--navy);margin:8px 0" href="mailto:steve@cegy.us?subject=PHEEP%20Site%20Review&body=Property%20name%3A%0APool%20address%3A%0AContact%20name%3A%0APhone%3A%0ANumber%20of%20pools%3A%0APool%20dimensions%3A">Email a Site Review Request</a></p>
+          <p><strong>Steve Nold · CEGY / PHEEP</strong></p><p><a class="btn btn-primary" style="color:var(--navy);margin:8px 0" href="mailto:steve@cegy.us?subject=PHEEP%20Program%20Inquiry">Email a Site Review Request</a></p>
           <p><a href="mailto:steve@cegy.us?subject=PHEEP%20Site%20Review%20Request">steve@cegy.us</a></p>
-          <p><a href="https://cegy.us">cegy.us</a></p>
-          <p><a href="https://www.socalgas.com">socalgas.com</a></p>
+
+          <p><a href="https://www.socalgas.com" target="_blank" rel="noopener noreferrer">SoCalGas website</a></p>
         </div>
       </div>
       <div class="program-note">PHEEP is funded by SoCalGas and administered by CEGY. Program availability, eligibility, installation terms, and estimated savings are subject to current program requirements and site-specific review. SoCalGas trademarks are the property of Southern California Gas Company.</div>
@@ -292,12 +299,51 @@
 </main>
 
 <footer>
-  <div class="foot">
-    <div><strong>PHEEP</strong><br><span style="color:#c9d9df;font-size:13px">Pool Heating Energy Efficiency Program</span></div>
-    <div class="note">Potential benefits and savings estimates are not guarantees. Actual results depend on equipment condition, operating schedules, weather, pool characteristics, utility rates, maintenance practices, and other site-specific factors.</div>
+  <div class="wrap" style="max-width:1180px">
+    <div style="display:flex;flex-wrap:wrap;gap:28px;align-items:center;margin-bottom:18px">
+      <div><strong style="font-size:22px">PHEEP</strong><div>Pool Heating Energy Efficiency Program</div></div>
+      <img src="assets/cegy-logo.jpg" alt="CEGY, third-party program implementer" width="110" height="61" style="object-fit:contain;background:#fff;padding:5px;border-radius:6px">
+    </div>
+    <p style="font-size:16px"><strong>AB 1167 Disclosure:</strong> This website and the messages contained in its webpages are funded by ratepayers unless otherwise noted.</p>
+    <p class="note">The PHEEP Program is funded by California utility customers and administered by Southern California Gas Company (SoCalGas) under the auspices of the California Public Utilities Commission through a contract awarded to CEGY. Program funds are allocated on a first-come, first-served basis until no longer available. The program may be modified or terminated without notice. Participants are not obligated to purchase additional goods or services from CEGY or another third party. Eligibility conditions apply.</p>
+    <p class="note">CEGY is responsible for implementation of the PHEEP program under its SoCalGas agreement, subject to applicable contract terms. SoCalGas does not endorse, qualify, or guarantee CEGY's or any other third party's work, services, or products. Savings and performance estimates are not guaranteed.</p>
+    <p class="note">© 2026 CEGY. The trademarks used herein are the property of their respective owners. All rights reserved.</p>
+    <nav aria-label="Legal and privacy" style="display:flex;flex-wrap:wrap;gap:18px;font-size:14px">
+      <a href="terms.html">Program Terms and Conditions</a>
+      <a href="utility-disclaimer.html">Utility Disclaimer</a>
+      <a href="privacy.html">Privacy Notice</a>
+      <a href="terms.html#website-terms">Terms of Use</a>
+    </nav>
   </div>
 </footer>
 
 
+<dialog id="externalNotice" class="external-notice" aria-labelledby="externalNoticeTitle">
+<h2 id="externalNoticeTitle">Leaving PHEEP.us</h2>
+<p>By clicking, you may leave https://pheep.us and transfer directly to the website of a third party, which is not part of the PHEEP program, CEGY, or SoCalGas. The Terms and Conditions and Privacy Policy on that website will apply.</p>
+<div class="actions"><button type="button" id="cancelExternal">Stay on PHEEP.us</button><button type="button" class="continue" id="continueExternal">Continue to external website</button></div>
+</dialog>
+<script>
+(function(){
+const dialog=document.getElementById('externalNotice');
+const confirm=document.getElementById('continueExternal');
+const cancel=document.getElementById('cancelExternal');
+let destination=null;
+document.addEventListener('click',function(event){
+  const a=event.target.closest('a[href]');
+  if(!a)return;
+  const u=new URL(a.href,location.href);
+  if(!['http:','https:'].includes(u.protocol)||u.origin===location.origin)return;
+  event.preventDefault();
+  destination=u.href;
+  dialog.showModal();
+});
+cancel.addEventListener('click',()=>{destination=null;dialog.close()});
+confirm.addEventListener('click',()=>{
+  const link=destination;destination=null;dialog.close();
+  if(link)window.open(link,'_blank','noopener,noreferrer');
+});
+})();
+</script>
 </body>
 </html>
