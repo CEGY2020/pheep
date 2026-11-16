@@ -321,24 +321,20 @@ dialog.external-notice::backdrop{background:rgba(0,0,0,.55)}
   <section id="video">
   <div class="wrap">
     <div class="section-title">
-      <h2>See How the Pool Heating Program Works</h2>
-      <p>Learn how a site review, heating schedule, and monitoring work together to help reduce unnecessary heater operation.</p>
+      <h2>New Revenue Opportunities for Rinnai Contractors</h2>
+      <p>Explore PHEEP and Optima ProLink opportunities for plumbing and mechanical contractors.</p>
     </div>
     <div class="video-panel">
       <div class="video-player">
-        <video id="pheepVideo" controls preload="none" playsinline poster="assets/pools.jpg" aria-label="PHEEP pool heating program overview video" hidden>
-          <source src="assets/pheep-program-overview.mp4" type="video/mp4">
-          Your browser does not support HTML5 video.
-        </video>
-        <div id="videoPending" class="video-pending" role="status">
-          <strong>Program Video</strong>
-          <p>An approved program overview video will be displayed here when available.</p>
+        <div class="video-pending">
+          <a class="btn btn-primary" href="https://youtu.be/hHVURziesmM" target="_blank" rel="noopener noreferrer" aria-label="Watch our contractor video on YouTube">▶ Watch Our Video</a>
+          <p>Watch the 3-minute contractor introduction on YouTube.</p>
         </div>
       </div>
       <div>
-        <h3>What the Video Will Cover</h3>
-        <p>A PHEEP program overview will show a typical commercial pool, explain how opening and closing times affect heating demand, and describe equipment monitoring and reporting.</p>
-        <p>Program-specific claims and imagery must follow the applicable SoCalGas website and photography requirements.</p>
+        <h3>PHEEP &amp; Optima ProLink</h3>
+        <p>Learn how contractors can introduce customers to PHEEP and identify opportunities for Optima ProLink monitoring, alerts, and domestic hot water system upgrades.</p>
+        <p>Participation in PHEEP does not require purchasing Optima ProLink or other additional products or services.</p>
       </div>
     </div>
   </div>
@@ -408,20 +404,6 @@ confirm.addEventListener('click',()=>{
   const link=destination;destination=null;dialog.close();
   if(link)window.open(link,'_blank','noopener,noreferrer');
 });
-})();
-</script>
-<script>
-/* Show the video player only after an actual local MP4 has been published. */
-(async function(){
- const video=document.getElementById('pheepVideo');
- const pending=document.getElementById('videoPending');
- if(!video||!pending)return;
- try{
-   const response=await fetch('assets/pheep-program-overview.mp4',{method:'HEAD',cache:'no-store'});
-   if(response.ok && (response.headers.get('content-type')||'').includes('video')){
-     video.hidden=false;pending.hidden=true;
-   }
- }catch(e){/* Remain in non-playable informational state. */}
 })();
 </script>
 </body>
